@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(Kero.jpg) no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+}
+.image{
+    width: 110px;
+    height: 55px;
+}
+.container{
+    display: block;
+    text-align: center;
+}
+.wrapper {
+    width: 420px;
+    background: white;
+    border: 1px solid rgba(248, 246, 246, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: #75BD43;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.input_box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative; /* Adicionado para posicionamento do ícone */
+}
+
+.input_box input {
+    width: calc(100% - 45px); /* Ajustado o tamanho para acomodar o ícone */
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #75BD43;
+    border-radius: 40px;
+    padding: 20px;
+    padding-right: 45px; /* Espaçamento ajustado para acomodar o ícone */
+    color: #75BD43; /* Cor adicionada para o texto */
+}
+
+.input_box input::placeholder {
+    color: #75BD43;
+}
+
+.input_box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #75BD43; /* Cor adicionada para o ícone */
+}
+
+.wrapper .remember_forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember_forgot label input {
+    /* Accent-color removido */
+    margin-left: 3px;
+    vertical-align: middle;
+}
+
+.remember_forgot a {
+    color: #75BD43;
+    text-decoration: none;
+}
+
+.remember_forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .submit_button {
+    width: 100%;
+    height: 45px;
+    background: #75BD43;
+    border: 2px solid #75BD43;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 15px; /* Espaçamento adicionado para separar o botão */
+    transition: all 0.9s;
+}
+.wrapper .submit_button:hover{
+    background-color: white;
+    color: #75BD43;
+    border: 2px solid #75BD43;
+}
+
+.wrapper .register_link{
+    font-size: 14.5;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register_link p a{
+    color: #75BD43;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register_link p a:hover{
+    text-decoration: underline;
+}
